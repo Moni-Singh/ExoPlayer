@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Sample TextView"
+                android:textSize="18sp" />
+
+            <!-- ImageView -->
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_egg_logo" /> <!-- Replace with your drawable resource -->
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Nullam ac libero sit amet nisi viverra scelerisque. Integer posuere, risus vel gravida dictum, risus ante luctus eros, nec commodo elit ligula nec ante. Morbi dictum lorem vel urna dapibus, nec dignissim orci eleifend. Vivamus sed bibendum nunc. Mauris at dictum arcu, nec ultrices urna."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Nullam ac libero sit amet nisi viverra scelerisque. Integer posuere, risus vel gravida dictum, risus ante luctus eros, nec commodo elit ligula nec ante. Morbi dictum lorem vel urna dapibus, nec dignissim orci eleifend. Vivamus sed bibendum nunc. Mauris at dictum arcu, nec ultrices urna."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Nullam ac libero sit amet nisi viverra scelerisque. Integer posuere, risus vel gravida dictum, risus ante luctus eros, nec commodo elit ligula nec ante. Morbi dictum lorem vel urna dapibus, nec dignissim orci eleifend. Vivamus sed bibendum nunc. Mauris at dictum arcu, nec ultrices urna."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Nullam ac libero sit amet nisi viverra scelerisque. Integer posuere, risus vel gravida dictum, risus ante luctus eros, nec commodo elit ligula nec ante. Morbi dictum lorem vel urna dapibus, nec dignissim orci eleifend. Vivamus sed bibendum nunc. Mauris at dictum arcu, nec ultrices urna."
+                android:textSize="16sp" />
+
+
+            <FrameLayout
+                android:id="@+id/layout_media_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="left"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
